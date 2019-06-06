@@ -98,7 +98,7 @@ MENU
 
 
         <div class="container">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeRegistrarme()">X Cerrar</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="$('#registro').toggle();">X Cerrar</a>
           <div class="row">
             <div class="offset-md-2 col-md-8 cont_gra_regi">
 
@@ -194,7 +194,7 @@ MENU
 
 
         <div class="container">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeRegistrarme()">X Cerrar</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="$('#ingresar').toggle();">X Cerrar</a>
           <div class="row">
             <div class="offset-md-2 col-md-8 cont_gra_regi">
 
@@ -273,7 +273,7 @@ Header
 
             <a class="navbar-brand d-lg-none float-right logo-mobil" href="#"><img src="assets/img/logo_aguasimple.png" alt="" class="img-fluid"/></a>
 
-            <button class="btn-cerrses-mob float-right navbar-toggler d-md-none d-sm-block" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn-cerrses-mob float-right navbar-toggler d-md-none d-sm-block" type="button">
               <i class="far fa-power-off"></i><br><label>Cerrar sesión</label>
             </button>
 
@@ -284,17 +284,17 @@ Header
 
                 <li class="nav-item active"><a href="" class="nav-link bor-top">Ingresar</a></li>
 
-                <li class="nav-item"><a href="" class="nav-link border-top-blue">Somos</a></li>
+                <li class="nav-item"><a href="#somos" class="nav-link border-top-blue">Somos</a></li>
 
-                <li class="nav-item "><a href="" class="nav-link">Materiales</a></li>
+                <li class="nav-item "><a href="#materiales" class="nav-link">Materiales</a></li>
 
-                <li class="nav-item "><a href="" class="nav-link">Cuéntanos tu experiencia</a></li>
+                <li class="nav-item "><a href="#cuentanos" class="nav-link">Cuéntanos tu experiencia</a></li>
 
-                <li class="nav-item "><a href="" class="nav-link">Faq´s</a></li>
+                <li class="nav-item "><a href="#faq" class="nav-link">Faq´s</a></li>
 
-                <li class="nav-item "><a href="" class="nav-link">Contacto</a></li>
+                <li class="nav-item "><a href="#contacto" class="nav-link">Contacto</a></li>
 
-                <li class="nav-item "><a href="" class="nav-link">Terminos</a></li>
+                <li class="nav-item "><a href="#terminos" class="nav-link">Terminos</a></li>
 
               </ul>
 
@@ -340,13 +340,13 @@ Header
 
                 <div class="col-lg-3 col-sm-3 div_md_50">
 
-                  <a href="" class="btn_white btn_npd">INGRESAR <i class="fal fa-chevron-circle-right"></i></a>
+                  <a class="btn_white btn_npd" onclick="$('#ingresar').toggle();">INGRESAR <i class="fal fa-chevron-circle-right"></i></a>
                   <span class="txt_blue">Ya estoy registrado</span>
                 </div>
 
                 <div class="col-lg-3 col-sm-3 div_md_50">
 
-                  <a href="" class="btn_white">CONOCE MÁS <i class="fal fa-chevron-circle-right"></i></a>
+                  <a class="btn_white" onclick="$('#registro').toggle();">CONOCE MÁS <i class="fal fa-chevron-circle-right"></i></a>
 
 
                 </div>
@@ -380,7 +380,7 @@ Header
                 <div class="col-lg-9 con-txt-bien">
                   <div class="row">
                     <div class="gota">
-                      <img src="assets/img/SOMOS/Objeto%20inteligente%20vectorial.png" alt="">
+                      <img src="assets/img/somos/gota.png" alt="">
                     </div>
                     <div class="texto-gota">
                       <p>
@@ -397,8 +397,8 @@ Header
                 <div class="col-lg-4">
                 </div>
 
-                <div class="col-lg-5 col-sm-3">
-                  <img src="assets/img/SOMOS/1200%20ML.png" alt="" class="img_somos">
+                <div class="col-lg-5">
+                  <img src="assets/img/somos/ingestarecomendada.png" alt="" class="img_somos">
                 </div>
 
 
@@ -417,32 +417,42 @@ Header
                 <div class="col-lg-12 ">
 
                   <h2 class="titulo text-center">MATERIALES PARA DESCARGAR</h2>
+                  <hr class="hr">
 
                 </div>
                 <div class="col-lg-1">
                 </div>
-                <div class="col-lg-9 con-txt-bien">
+                <div class="col-lg-9 ">
                   <div class="row">
-                    <div class="gota">
-                      <img src="assets/img/SOMOS/Objeto%20inteligente%20vectorial.png" alt="">
+                    <div class="ninos">
+                      <img src="assets/img/materiales/NIN%CC%83OS.png" alt="">
                     </div>
-                    <div class="texto-gota">
+                    <div class="texto-ninos">
                       <p>
-                        Hola, amigos y amigas, yo soy Font.
-                        <br>
-                        <br>
-                        <span class="txt_amar">Prefiero Agua Simple</span> es una estrategia educativa diseñada para niños escolares de 6 a 9 años de edad. Esta estrategia se sustenta en los postulados de algunas teorías que han demostrado ser útiles en la modificación de habitos y que tiene como objetivo principal fomentar el consumo de agua simple.
+                        <br><br>
+                        Aqui podrás descargar los materiales de apoyo necesarios para poder implementar la estrategia educativa "Prefiero Agua Simple". Estos materiales fueron diseñados especialmente para cada grupo de edad.
                       </p>
                     </div>
 
                   </div>
                 </div>
-
-                <div class="col-lg-4">
+                <div class="col-md-2 offset-md-2 material">
+                  <a href="materiales.html">
+                    <img src="assets/img/materiales/profesor.png" alt="" >
+                    <p class="titulo">Conoce los materiales</p>
+                  </a>
                 </div>
-
-                <div class="col-lg-5 col-sm-3">
-                  <img src="assets/img/SOMOS/1200%20ML.png" alt="" class="img_somos">
+                <div class="col-md-2 offset-md-1 material">
+                  <a href="materiales.html">
+                    <img src="assets/img/materiales/alumno.png" alt="">
+                    <p class="titulo">Conoce los materiales</p>
+                  </a>
+                </div>
+                <div class="col-md-2 offset-md-1 material">
+                  <a href="materiales.html">
+                    <img src="assets/img/materiales/familiar.png" alt="">
+                    <p class="titulo">Conoce los materiales</p>
+                  </a>
                 </div>
 
 
@@ -454,7 +464,262 @@ Header
             </div> 
 
           </div>
+          <!---------------------------->
+          <div id="cuentanos">                                      
+
+            <div class="container" >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">Cuéntanos tu experiencia</h2>
+
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-8 cen clearfix">
+                  <div class="block-cuerpo">
+                    <p class="titulo madona">Nueva Publicación</p>
+                    <textarea></textarea>
+                    <p>Hasta 200 caracteres por publicación<span>0/200 Caracteres</span></p>
+                    <div class="botones clearfix">
+                      <button class="foto"><img src="./assets/img/blogNota/camara.png"> Subir Foto</button>
+                      <button class="subir">Publicar<img src="./assets/img/blogNota/right.png"></button>
+                    </div>
+                  </div>
+
+                  <div class="block-cuerpo">
+                    <div class="cabecera">
+                      <img class="logo" src="./assets/img/blog/logoc.png">
+                      <p class="titulo madona">Sofia Castro</p>
+                      <p class="info">22/12/2017 10:30am</p>
+                      <br>
+                    </div>
+                    <img src="./assets/img/blog/publicacion.png">
+                    <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+                  <div class="block-cuerpo">
+                    <div class="cabecera">
+                      <img class="logo" src="./assets/img/blog/logoc.png">
+                      <p class="titulo madona">Sofia Castro</p>
+                      <p class="info">22/12/2017 10:30am</p>
+                      <br>
+                    </div>
+                    <img src="./assets/img/blog/publicacion.png">
+                    <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                </div>
+
+
+
+
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+          </div>
           <!----------------------------> 
+          <div id="faq">                                      
+
+            <div class="container" >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">FAQ's</h2>
+                  <hr>
+
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9 ">
+                  <div class="faq-preg">
+                    <p class="pregunta">¿Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                  </div>
+                  <div class="faq-preg">
+                    <p class="pregunta">¿Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                  </div>
+                  <div class="faq-preg">
+                    <p class="pregunta">¿Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                  </div>
+                  <div class="faq-preg">
+                    <p class="pregunta">¿Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+          </div> 
+          <!----------------------------> 
+          <div id="contacto" class="contacto-content">                                      
+
+            <div class="container" >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">CONTACTO</h2>
+                  <hr>
+
+                </div>
+
+
+
+                <!---------------------------------->
+                <div class="row">
+                  <div class="offset-md-1 col-md-6 cont_gra_regi">
+                    <div class="col-sm-12">
+                      <p class="txt_med_reg">Si quieres información adicional, tienes comentarios o dudas del sitio web o la estrategia educativa no dudes en hacernoslo saber.</p>
+                    </div>
+                    <div class="row">
+                      <div class="form-check col-sm-4">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="tUser">PROFESOR
+                        </label>
+                      </div>
+                      <div class="form-check col-sm-4">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="tUser">PADRE
+                        </label>
+                      </div>
+                      <div class="form-check col-sm-4">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="tUser" disabled>NUTRIÓLOGO
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <input type="text" class="form-control" placeholder="Nombre (s)">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" class="form-control" placeholder="Apellido Paterno">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" class="form-control" placeholder="Apellido Materno">
+                      </div>
+                      <div class="form-group  col-sm-6">
+                        <input type="text" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group  col-sm-12">
+                        <input type="text" class="form-control" placeholder="Motivo de contacto">
+                      </div>
+                      <div class="form-group  col-sm-12">
+                        <input type="text" class="form-control" placeholder="Mensaje...">
+                      </div>
+
+
+
+
+                      <div class="form-group col-sm-4 offset-sm-4">
+                        <input type="button" class="btn-reg" value="ENVIAR" onClick="closeRegistrarme()">
+                      </div>
+                    </div>     
+
+                  </div>
+                  <div class="col-md-3 contacto-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla sociosqu, feugiat dui luctus ante convallis ullamcorper . </p>
+                    <p>Penatibus quis hendrerit inceptos vehicula hac ridiculus dictumst. </p>
+                    <p class="cont">Contactanos en:</p>
+                    <p class="numero">55 123 4567</p>
+                  </div>
+
+                </div>
+                <!---------------------------------->
+
+
+
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+          </div> 
+          <!----------------------------> 
+          <div id="terminos">                                      
+
+            <div class="container" >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">Terminos y Condiciones</h2>
+                  <hr>
+
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9 ">
+                  <div class="terminos">
+                    <p class="titulo">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p class="titulo">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p class="titulo">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat feugiat, leo montes risus euismod erat suscipit semper mauris, senectus quis dictum auctor aliquam in tortor ultrices. Sem taciti laoreet in cras fusce magnis hendrerit neque class, habitasse congue mattis penatibus velit bibendum auctor vehicula. Lacinia nascetur bibendum pellentesque vitae eget, rutrum netus consequat molestie fusce litora, facilisi eros nulla dignissim.</p>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+          </div> 
 
 
 
@@ -481,12 +746,6 @@ Header
         </div>
       </div>	
     </footer><!--Termina FOOTER-->
-
-
-
-
-
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>	
@@ -514,21 +773,6 @@ Header
       });
     </script>
 
-    <script>
-
-      function openContacto() {
-        document.getElementById("contact").style.height = "100%";
-        $(document).ready(function(){
-          $(this).find('#contact').focus();
-        });
-      }
-
-      function closeContacto() {
-        document.getElementById("contact").style.height = "0%";
-      }
-    </script>
-
-
     <script>		
       (function() {
         'use strict';
@@ -547,99 +791,11 @@ Header
           }
         })
       })();
-    </script>		
-
-
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("btn_go_tothetop").style.display = "block";
-        } else {
-          document.getElementById("btn_go_tothetop").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        $('#btn_go_tothetop').click(function(){ 
-          $("html, body").animate({ scrollTop: 0 }, 700); 
-          return false; 
-        });
-      }
     </script>
-
-
-
-
-
-
-
-
-
-    <!--<script>
-$("#myCarousel").swipe({
-
-swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-if (direction == 'left') $(this).carousel('next');
-if (direction == 'right') $(this).carousel('prev');
-
-},
-allowPageScroll:"vertical"
-
-});
-</script>-->
-
-    <!--<script>
-$("#myCarousel").carousel({
-interval: 8000
-})
-</script>-->
-
-
-
-
-    <script type="text/javascript">
-      // Select all links with hashes
-      $('a[href*="#"]')
-      // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-        // On-page links
-        if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
-          location.hostname == this.hostname
-        ) {
-          // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-            // Only prevent default if animation is actually gonna happen
-            event.preventDefault();
-            //$('html, body').animate({
-            $('.cont-gen').animate({
-              scrollTop: target.offset().top
-            }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-              } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              };
-            });
-          }
-        }
+    <script>		
+      $("#navbarTogglerDemo02 > ul > li > a").click(function (e) {
+        $('#navbarTogglerDemo02').removeClass("show");
       });
-    </script>
+    </script>		
   </body>
 </html>
