@@ -691,3 +691,8 @@ div.block-cuerpo > video{
 .botones .subir{
   float: right;
 }
+.recom {
+    color: #ffffff;
+    font-size: 12px;
+    text-align: left;
+}
