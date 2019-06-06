@@ -144,11 +144,9 @@ h2 {
 
 .cont-gen {
   color: #ffffff;
-  background: url(../assets/img/bg_agua.jpg);
-  background-position: top;
-  background-size: cover;
   height: 100vh;
   overflow: scroll;
+  overflow: auto;
 
 }
 

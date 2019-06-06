@@ -138,16 +138,16 @@ MENU
                   <div class="form-group col-sm-4">
                     <input type="text" class="form-control" placeholder="Apellido Materno">
                   </div>
-                  <div class="form-group col-sm-4">
-                     <label >Genero: </label>
-                    <div class="form-check disabled">
+                  <div class="form-group col-sm-4 gender">
+                    <label >Genero: </label>
+                    <div class="form-check">
                       <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" disabled>Hombre
+                        <input type="radio" class="form-check-input" name="gender">Hombre
                       </label>
                     </div>
-                    <div class="form-check disabled">
+                    <div class="form-check">
                       <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" disabled>Mujer
+                        <input type="radio" class="form-check-input" name="gender" >Mujer
                       </label>
                     </div>
 
@@ -164,19 +164,57 @@ MENU
                   <div class="form-group col-sm-4">
                     <input type="text" class="form-control" placeholder="Estado">
                   </div>
-                  
-                  <div class="form-group col-sm-6">
+
+                  <div class="form-group col-sm-5">
                     <input type="text" class="form-control" placeholder="¿Cómo te enteraste del sitio web?">
                   </div>
-                  <div class="form-group col-sm-6">
+                  <div class="form-group col-sm-7">
                     <input type="text" class="form-control" placeholder="¿En dónde implementarás la estrategía educatia?">
                   </div>
-                  <div class="form-group col-sm-6 offset-sm-3">
+                  <div class="form-group col-sm-10 offset-sm-1">
                     <input type="text" class="form-control" placeholder="¿Cúal es el objetivo por el cúal deseas implementar la estrategia educativa?">
                   </div>
-                  
+
                   <div class="form-group col-sm-4 offset-sm-4">
-                    <input type="button" class="" value="REGISTRARME" onClick="closeRegistrarme()">
+                    <input type="button" class="btn-reg" value="REGISTRARME" onClick="closeRegistrarme()">
+                  </div>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="ingresar" class="overlay">
+
+      <div class="overlay-content">
+
+
+
+        <div class="container">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeRegistrarme()">X Cerrar</a>
+          <div class="row">
+            <div class="offset-md-2 col-md-8 cont_gra_regi">
+
+              <div class="col-sm-6 offset-sm-3">
+                <p class="txt_gra_reg">INGRESAR</p>
+
+
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nombre de usuario">
+                  </div>
+                  <div class="form-group col-sm-12">
+                    <input type="text" class="form-control" placeholder="Ingresa tu contraseña">
+                  </div>                  
+                  <div class="form-group col-sm-12">
+                    <a href="" class="recuperar">Olvide mi contraseña.</a>
+                  </div>
+                  <br>
+                  <div class="form-group col-sm-12">
+                    <input type="button" class="btn-reg" value="REGISTRARME" onClick="closeRegistrarme()">
                   </div>
                 </div>     
               </div>
@@ -209,19 +247,19 @@ Header
             <ul class="navbar-nav nav-desk">
 
 
-              <li class="nav-item active"><a href="" class="nav-link">Ingresar</a></li>
+              <li class="nav-item active"><a href="#login" class="nav-link">Ingresar</a></li>
 
-              <li class="nav-item"><a href="" class="nav-link">Somos</a></li>
+              <li class="nav-item"><a href="#somos" class="nav-link">Somos</a></li>
 
-              <li class="nav-item "><a href="" class="nav-link">Materiales</a></li>
+              <li class="nav-item "><a href="#materiales" class="nav-link">Materiales</a></li>
 
-              <li class="nav-item "><a href="" class="nav-link">Cuéntanos tu experiencia</a></li>
+              <li class="nav-item "><a href="#cuentanos" class="nav-link">Cuéntanos tu experiencia</a></li>
 
-              <li class="nav-item "><a href="" class="nav-link">Faq´s</a></li>
+              <li class="nav-item "><a href="#faq" class="nav-link">Faq´s</a></li>
 
-              <li class="nav-item "><a href="" class="nav-link">Contacto</a></li>
+              <li class="nav-item "><a href="#contacto" class="nav-link">Contacto</a></li>
 
-              <li class="nav-item "><a href="" class="nav-link">Terminos</a></li>
+              <li class="nav-item "><a href="#terminos" class="nav-link">Terminos</a></li>
 
             </ul>
           </nav>
@@ -268,104 +306,155 @@ Header
 
 
         <div class="col-lg-10 col-sm-12 cont-gen">
+          <div id="login">
+            <div class="fix-header">
+              Hola, Daniel Orozco / Cerrar Sesión
+            </div>
+            <div class="container" >
+              <div class="row">
 
-          <div class="container ">
-            <div class="row  ">
+                <div class="col-lg-12 ">
 
-              <div class="col-lg-12 ">
+                  <img src="assets/img/logo_aguasimple.png" class="logo-der-full img-fluid d-block" alt="" />
 
-                <img src="assets/img/logo_aguasimple.png" class="logo-der-full img-fluid d-block" alt="" />
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9 con-txt-bien">
+
+                  <h2 class="text-center  d-lg-none ">Bienvenido</h2>
+
+                  <p class="text-center">
+                    <span class="txt_amar txt_bien_2">Bienvenido</span> <span class="txt_capital">a</span>l sitio dónde podrás encontrar toda la información para iniciar una vida saludable, 
+                    con el objetivo de conocer los <span class="txt_amar">beneficios de tomar agua simple</span> durante el día, 
+                    tambien encontrarás dinámicas que ayudarán a comunicar mejor el proposito de nuestra plataforma digital.</p>
+                </div>
+
+                <div class="col-lg-1">
+                </div>
+
+                <div class="col-lg-3 col-sm-3 position-relative div_dnone_sm">
+                  <img src="assets/img/nino_ingre.png" alt="" class="img_nino_ingr">
+                </div>
+
+
+                <div class="col-lg-3 col-sm-3 div_md_50">
+
+                  <a href="" class="btn_white btn_npd">INGRESAR <i class="fal fa-chevron-circle-right"></i></a>
+                  <span class="txt_blue">Ya estoy registrado</span>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 div_md_50">
+
+                  <a href="" class="btn_white">CONOCE MÁS <i class="fal fa-chevron-circle-right"></i></a>
+
+
+                </div>
+
+                <div class="col-lg-3 col-sm-3 position-relative div_dnone_sm">      
+
+                  <img src="assets/img/nina_ingre.png" alt=""  class="img_nina_ingr">
+
+                </div>
+
+                <div class="div_space ">
+
+                </div>
 
               </div>
-              <div class="col-lg-1">
-              </div>
-              <div class="col-lg-9 con-txt-bien">
-
-                <h2 class="text-center  d-lg-none ">Bienvenido</h2>
-
-                <p class="text-center">
-                  <span class="txt_amar txt_bien_2">Bienvenido</span> <span class="txt_capital">a</span>l sitio dónde podrás encontrar toda la información para iniciar una vida saludable, 
-                  con el objetivo de conocer los <span class="txt_amar">beneficios de tomar agua simple</span> durante el día, 
-                  tambien encontrarás dinámicas que ayudarán a comunicar mejor el proposito de nuestra plataforma digital.</p>
-              </div>
-
-              <div class="col-lg-1">
-              </div>
-
-              <div class="col-lg-3 col-sm-3 position-relative div_dnone_sm">
-                <img src="assets/img/nino_ingre.png" alt="" class="img_nino_ingr">
-              </div>
-
-
-              <div class="col-lg-3 col-sm-3 div_md_50">
-
-                <a href="" class="btn_white btn_npd">INGRESAR <i class="fal fa-chevron-circle-right"></i></a>
-                <span class="txt_blue">Ya estoy registrado</span>
-              </div>
-
-              <div class="col-lg-3 col-sm-3 div_md_50">
-
-                <a href="" class="btn_white">CONOCE MÁS <i class="fal fa-chevron-circle-right"></i></a>
-
-
-              </div>
-
-              <div class="col-lg-3 col-sm-3 position-relative div_dnone_sm">      
-
-                <img src="assets/img/nina_ingre.png" alt=""  class="img_nina_ingr">
-
-              </div>
-
-              <div class="div_space ">
-
-              </div>
-
             </div>
           </div>
-
-
-
-
-          <!---------------------------->                                       
-
-          <div class="container ">
-            <div class="row  ">
-
-              <div class="col-lg-12 ">
-
-                <h2 class="text-center">¿QUÉ ES PREFIERO AGUA SIMPLE?</h2>
-
-              </div>
-              <div class="col-lg-1">
-              </div>
-              <div class="col-lg-9 con-txt-bien">
-
-                <h2 class="text-center  d-lg-none ">¿Q</h2>
-
-                <p class="text-center">
-                  Hola, amigos y amigas, yo soy Font.
-                  <br>
-                  <span class="txt_amar">Prefiero Agua Simple</span> es una estrategia educativa diseñada para niños escolares de 6 a 9 años de edad. Esta estrategia se sustenta en los postulados de algunas teorías que han demostrado ser útiles en la modificación de habitos y que tiene como objetivo principal fomentar el consumo de agua simple.
-              </div>
-
-              <div class="col-lg-4">
-              </div>
-
-              <div class="col-lg-4 col-sm-4">
-                <img src="assets/img/nino_ingre.png" alt="" class="img_nino_ingr">
-              </div>
-
-
-              <div class="div_space">
-
-              </div>
-
-            </div>
-          </div> 
-
           <!----------------------------> 
+          <div id="somos">                                      
+
+            <div class="container" >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">¿QUÉ ES PREFIERO AGUA SIMPLE?</h2>
+
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9 con-txt-bien">
+                  <div class="row">
+                    <div class="gota">
+                      <img src="assets/img/SOMOS/Objeto%20inteligente%20vectorial.png" alt="">
+                    </div>
+                    <div class="texto-gota">
+                      <p>
+                        Hola, amigos y amigas, yo soy Font.
+                        <br>
+                        <br>
+                        <span class="txt_amar">Prefiero Agua Simple</span> es una estrategia educativa diseñada para niños escolares de 6 a 9 años de edad. Esta estrategia se sustenta en los postulados de algunas teorías que han demostrado ser útiles en la modificación de habitos y que tiene como objetivo principal fomentar el consumo de agua simple.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                </div>
+
+                <div class="col-lg-5 col-sm-3">
+                  <img src="assets/img/SOMOS/1200%20ML.png" alt="" class="img_somos">
+                </div>
 
 
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+          </div>
+          <!----------------------------> 
+          <div id="materiales">
+            <div class="container " >
+              <div class="row  ">
+
+                <div class="col-lg-12 ">
+
+                  <h2 class="titulo text-center">MATERIALES PARA DESCARGAR</h2>
+
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9 con-txt-bien">
+                  <div class="row">
+                    <div class="gota">
+                      <img src="assets/img/SOMOS/Objeto%20inteligente%20vectorial.png" alt="">
+                    </div>
+                    <div class="texto-gota">
+                      <p>
+                        Hola, amigos y amigas, yo soy Font.
+                        <br>
+                        <br>
+                        <span class="txt_amar">Prefiero Agua Simple</span> es una estrategia educativa diseñada para niños escolares de 6 a 9 años de edad. Esta estrategia se sustenta en los postulados de algunas teorías que han demostrado ser útiles en la modificación de habitos y que tiene como objetivo principal fomentar el consumo de agua simple.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                </div>
+
+                <div class="col-lg-5 col-sm-3">
+                  <img src="assets/img/SOMOS/1200%20ML.png" alt="" class="img_somos">
+                </div>
+
+
+                <div class="div_space">
+
+                </div>
+
+              </div>
+            </div> 
+
+          </div>
+          <!----------------------------> 
 
 
 
@@ -513,20 +602,44 @@ interval: 8000
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript">
+      // Select all links with hashes
+      $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+          && 
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            //$('html, body').animate({
+            $('.cont-gen').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+    </script>
   </body>
 </html>
