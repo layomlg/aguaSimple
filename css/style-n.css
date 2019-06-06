@@ -115,9 +115,9 @@ body{
   z-index: 4;
 }
 @media(max-width: 992px) {
-.fix-header{
-  display: none;
-}
+  .fix-header{
+    display: none;
+  }
 }
 
 /******************************************/
@@ -560,6 +560,7 @@ hr.separador{
   color: #b4dbff;
   font-size: 14px;
   padding: 0px 15px 15px;
+  text-align: justify;
 }
 
 .faq-preg{
@@ -692,7 +693,22 @@ div.block-cuerpo > video{
   float: right;
 }
 .recom {
-    color: #ffffff;
-    font-size: 12px;
-    text-align: left;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+}
+.logo-nav{
+  width: 80%;
+  margin: 0px auto;
+}
+.contacto-txt{
+  margin-top: 90px;
+} 
+
+.cont-navbar .navbar ul li a {
+  padding: 20px;
+}
+nav.navbar.navbar-fixed-left.align-content-start.p-0 {
+  max-height: 100vh;
+  overflow: auto;
 }
