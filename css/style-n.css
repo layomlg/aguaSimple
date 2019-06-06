@@ -218,7 +218,7 @@ body{
 .closebtn{
   color: #ffd204;
   width: 100%;
-  text-align: right;
+  text-align: center;
   display: block;
 }
 .gender label{
