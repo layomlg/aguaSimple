@@ -39,7 +39,7 @@ body{
 
 .cont-gen > div{
   min-height: 100%;
-  padding: 80px 15px;
+  padding: 50px 15px;
 }
 
 @media(max-width: 992px) {
@@ -109,9 +109,11 @@ body{
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 100%;
+  width:calc(100% - 227.656px);
+  height: 40px!important;
+  min-height: inherit!important;
   text-align: right;
-  padding: 10px 30px;
+  padding: 10px 30px!important;;
   z-index: 4;
 }
 @media(max-width: 992px) {
@@ -672,6 +674,7 @@ div.block-cuerpo > video{
 .botones{
   width: 100%;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .botones .foto img,
 .botones .subir img{
@@ -716,4 +719,109 @@ div.block-cuerpo > video{
 nav.navbar.navbar-fixed-left.align-content-start.p-0 {
   max-height: 100vh;
   overflow: auto;
+}
+
+/******************Botones************************/
+button.gris {
+  background-color: #F5F5F5;
+  color: #857767;
+  border-radius: 15px;
+  border: 1px solid #F5F5F5;
+  opacity: 1;
+  padding: 4px 15px;
+}
+div.botones button.gris {
+  margin-left: 0px;
+}
+div.botones button.gris:nth-child(2) {
+  margin-right: 20px;
+}
+button > img {
+  height: 15px;
+}
+
+.comentar > img{
+  display: inline-block;
+  margin: 10px 0px;
+  width: 50px;
+}
+.comentar > textarea{
+  float: right;
+  width: calc( 100% - 60px);
+  display: inline-block;
+  min-height: 40px;
+  margin: 10px 0px;
+  padding: 5px;
+  text-align: left;
+  padding: 5px; 
+  font-size: 12px;
+  border: 1px solid #d8d9de;
+  resize: none;
+}
+.comentar > p{
+  margin: 4px 0px;
+  font-family: 'Cocon-Bold', sans-serif;
+}
+.comentar > p >span{
+  float: right;
+}
+.comment > img{
+  display: inline-block;
+  margin: 10px 0px;
+  width: 50px;
+}
+.comment > p{
+  float: right;
+  width: calc( 100% - 60px);
+  display: inline-block;
+  min-height: 40px;
+  padding: 5px;
+  margin: 10px 0px; 
+  border: 1px solid #d8d9de;
+}
+.comment, .comentar{
+  border-top: 1px solid #d8d9de;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  padding: 0px 15px;
+}
+
+.comentario{
+  position: relative;
+}
+.comentario textarea{
+  width: calc(100% - 60px);
+  margin-right: 0px;
+  pointer-events: none;
+  resize:none;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+}
+.comentario.editar textarea{
+  width: calc(100% - 60px);
+  margin-right: 0px;
+  pointer-events: inherit;
+  background-color: #fff;
+  border-color: #d8d9de;
+}
+.comentario .botones{
+  display: none;
+}
+
+button.outline {
+  background-color: #fff;
+  color: #857767;
+  border-radius: 15px;
+  border: 1px solid #ff8c6a;
+  padding: 4px 15px;
+}
+button.f {
+  float: right;
+}
+button.gris:hover {
+    border: 1px solid #ff8c6a;
+}
+button.outline:hover, button.outline.active {
+    background-color: #ff8c6a;
+    color: #fff;
 }
