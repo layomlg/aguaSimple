@@ -17,6 +17,9 @@
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 
 
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" />
+
+
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -25,7 +28,7 @@
     <link href="css/full_width_carousel.css" rel="stylesheet" media="all">
 
     <link rel="stylesheet" type="text/css" href="css/style-n.css">
-    
+
     <style>
       .fix-header{
         background-color: #ffbaa7;
@@ -314,110 +317,211 @@ Header
 
 
         <div class="col-lg-10 col-sm-12 cont-gen"><div class="fix-header">Hola, Daniel Orozco / Cerrar Sesión</div>
-          <div id="cuentanos">                                      
+          <div id="cuentanos-admin">                                      
 
             <div class="container" >
               <div class="row  ">
 
                 <div class="col-lg-12 ">
 
-                  <h2 class="titulo text-center">Cuéntanos tu experiencia</h2>
-
+                  <h2 class="titulo text-center title-admin">ADMINISTRADOR DE CONTENIDOS</h2>
+                  <hr>
+                  <p class="txt-admin"><b>Bienvenido</b>, ahora podrás aceptar o rechazar los comentarios de nuestras notas publicadas, con las siguientes opciones:</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-sm-4">
+                  <p class="txt-admin gray"><span class="aprobado"></span> Validar y publicar</p>
                 </div>
-                <div class="col-lg-8 cen clearfix">
-                  <div class="block-cuerpo">
-                    <p class="titulo madona">Nueva Publicación</p>
-                    <textarea></textarea>
-                    <p>Hasta 200 caracteres por publicación<span>0/200 Caracteres</span></p>
-                    <div class="botones clearfix">
-                      <button class="foto"><img src="./assets/img/blogNota/camara.png"> Subir Foto</button>
-                      <button class="subir">Publicar<img src="./assets/img/blogNota/right.png"></button>
+                <div class="col-sm-4">
+                  <p class="txt-admin gray"><span class="rechazado"></span> Rechazar con un comentario</p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="txt-admin gray"><span class="eliminado"></span> Eliminar sin comentario</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-10 offset-sm-1 cen clearfix administrador">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Por aprobar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Rechazadas</a>
+                    </li>
+                  </ul><!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                      <div class="block-cuerpo">
+                        <p class="seccion">Filtrar publicaciones por: </p>
+                        <div class="pub-filtro">
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <select>
+                                <option value="0">Tipo de Usuario</option>
+                                <option value="0">Profesor</option>
+                                <option value="0">Familiar</option>
+                                <option value="0">Alumno</option>
+                                <option value="0">Otro</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-4">
+
+                              <input type="text" placeholder="Filtrar por palabra:" />
+                            </div>
+                            <div class="col-sm-4">
+
+                              <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                            </div>
+                            <div class="form-group col-sm-4 offset-sm-8">
+                              <input type="button" class="btn-filtro" value="FILTRAR">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
+                      <div class="block-cuerpo">
+                        <div class="cabecera">
+                          <img class="logo" src="./assets/img/blog/logoc.png">
+                          <p class="titulo madona">Sofia Castro</p>
+                          <p class="info">22/12/2017 10:30am</p>
+                          <br>
+                        </div>
+                        <div class="contenido clearfix">
+                          <img src="./assets/img/blog/publicacion.png">
+                          <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="btn-aprobar">
+                          <button class="aprobar"></button>
+                          <button class="rechazar"></button>
+                          <button class="eliminar"></button>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="block-cuerpo">
-                    <div class="cabecera">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <p class="titulo madona">Sofia Castro</p>
-                      <p class="info">22/12/2017 10:30am</p>
-                      <br>
-                    </div>
-                    <img src="./assets/img/blog/publicacion.png">
-                    <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="botones">
-                      <span>(3)</span>
-                      <button class="gris"><img src="./assets/img/blog/like.png"> Me gusta</button>
-                      <span>(5)</span>
-                      <button class="gris"><img  src="./assets/img/blog/globe.png"> Comentar</button>
-                    </div>
-                    <div class="comentar comentario clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea maxlength="200" rows="2" data-info="textarea-words-info" style="resize:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </textarea>
-                      <div class="botones">
-                        <button class="outline f">Publicar</button>
-                      </div>
-                      <br>
-                    </div>
-                    <div class="comentar comentario editar clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea maxlength="200" rows="2" data-info="textarea-words-info" style="resize:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </textarea>              
-                      <div class="botones">
-                        <button class="outline f">Aceptar</button>
-                      </div>
-                      <br>
-                    </div>
-                    <div class="comentar clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea></textarea>
-                      <p>Hasta 200 caracteres por publicación<span>0/200 Caracteres</span></p>
-                      <div class="botones">
-                        <button class="outline f">Publicar</button>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="block-cuerpo">
-                    <div class="cabecera">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <p class="titulo madona">Sofia Castro</p>
-                      <p class="info">22/12/2017 10:30am</p>
-                      <br>
-                    </div>
-                    <img src="./assets/img/blog/publicacion.png">
-                    <p class="contenido-pub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="botones">
-                      <span>(3)</span>
-                      <button class="gris"><img src="./assets/img/blog/like.png"> Me gusta</button>
-                      <span>(5)</span>
-                      <button class="gris"><img  src="./assets/img/blog/globe.png"> Comentar</button>
-                    </div>
-                    <div class="comentar comentario clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea maxlength="200" rows="2" data-info="textarea-words-info" style="resize:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </textarea>
-                      <div class="botones">
-                        <button class="outline f">Publicar</button>
-                      </div>
-                      <br>
-                    </div>
-                    <div class="comentar comentario editar clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea maxlength="200" rows="2" data-info="textarea-words-info" style="resize:none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </textarea>              
-                      <div class="botones">
-                        <button class="outline f">Aceptar</button>
-                      </div>
-                      <br>
-                    </div>
-                    <div class="comentar clearfix">
-                      <img class="logo" src="./assets/img/blog/logoc.png">
-                      <textarea></textarea>
-                      <p>Hasta 200 caracteres por publicación<span>0/200 Caracteres</span></p>
-                      <div class="botones">
-                        <button class="outline f">Publicar</button>
-                      </div>
-                    </div>
-                  </div>
+
 
                 </div>
 
@@ -473,6 +577,19 @@ Header
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <!--======= Customize =========-->
     <script src="js/responsive_bootstrap_carousel.js"></script>
+
+
+    <script type="text/javascript" src="./js/datarange/moment.min.js"></script>
+    <script type="text/javascript" src="./js/datarange/daterangepicker.min.js"></script>
+    <script>
+      $(function() {
+        $('input[name="daterange"]').daterangepicker({
+          opens: 'left'
+        }, function(start, end, label) {
+          console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+      });
+    </script>
 
 
     <script>
