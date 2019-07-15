@@ -982,9 +982,9 @@ span.eliminado{
   background-color: #FFF0EC;
 }
 .nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 
 
@@ -1005,4 +1005,17 @@ span.eliminado{
 .pub-filtro .btn-filtro:hover{
   background-color: #E36D4D;
   color: #ffffff;
+}
+
+
+.navbar-brand.logo-desk{
+  width: 100%;
+}
+.pt-330{
+  padding-top: 330px;
+  text-align: center;
+}
+
+.row > .row {
+  width: 100%;
 }

@@ -31,6 +31,21 @@
         background-color: #074380;
       }
     </style>
+    <script>
+      //var myAudio = document.getElementById("myAudio");
+
+      function togglePlay(aud) {
+        console.log(aud);
+        var myAudio = document.getElementById(aud);
+        if (myAudio.paused) {
+          myAudio.currentTime = 0;
+          myAudio.play();
+        } else {
+          myAudio.pause();
+        }
+      };
+
+    </script>	
 
 
   </head>
@@ -124,6 +139,7 @@ Header
 
 
 
+
         <div class="col-lg-10 col-sm-12 cont-gen"><div class="fix-header">Hola, Daniel Orozco / Cerrar Sesión</div>
           <div id="materiales-contenido">
             <div class="container " >
@@ -156,23 +172,31 @@ Header
                         <div class="row">
                           <div class="col-sm-4">
                             <div class="pista">
-                              <button class="audio"></button>
+                              <button class="audio"  onClick="togglePlay('audio1')"></button>
                             </div>
                             <div class="informacion">
                               <a href="">NOMBRE DEL AUDIO</a>
                               <p class="tipo">Cuento Corto</p>
                               <p class="duracion">Duración <spam>06:19</spam></p>
                             </div>
+                            <audio controls id="audio1">
+                              <source src="./assets/audio/SampleAudio_0.4mb.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                            </audio>
                           </div>
                           <div class="col-sm-4">
                             <div class="pista">
-                              <button class="audio"></button>
+                              <button class="audio" onClick="togglePlay('audio2')"></button>
                             </div>
                             <div class="informacion">
                               <a href="">NOMBRE DEL AUDIO</a>
                               <p class="tipo">Cuento Corto</p>
                               <p class="duracion">Duración <spam>06:19</spam></p>
                             </div>
+                            <audio controls id="audio2">
+                              <source src="./assets/audio/SampleAudio_0.7mb.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                            </audio>
                           </div>
                           <div class="col-sm-4">
                             <div class="pista">
@@ -987,8 +1011,6 @@ Header
         $(".visualizador").addClass($(this).val());        
         $(".titulo-grade").text($(this).val());        
       });
-    </script>	
-
-
+    </script>
   </body>
 </html>
