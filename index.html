@@ -114,24 +114,33 @@ MENU
                 <div class="row">
                   <div class="form-check col-sm-3">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="tUser">PROFESOR
+                      <input type="radio" class="form-check-input" name="tUser" value="prof">PROFESOR
                     </label>
                   </div>
                   <div class="form-check col-sm-3">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="tUser">FAMILIAR
+                      <input type="radio" class="form-check-input" name="tUser" value="fam">FAMILIAR
                     </label>
                   </div>
                   <div class="form-check col-sm-3">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="tUser" >ALUMNO
+                      <input type="radio" class="form-check-input" name="tUser" value="alum">ALUMNO
                     </label>
                   </div>
                   <div class="form-check col-sm-3">
                     <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="tUser" >OTRO
+                      <input type="radio" class="form-check-input" name="tUser" value="otro">OTRO
                     </label>
                   </div>
+                  
+                  <div class="form-group col-sm-4 offset-sm-8 otro-input">
+                    <input type="text" class="form-control" placeholder="Ingresa tu tipo de usuario">
+                    <div class="invalid-feedback">
+                      *Ingresa tu tipo de usuario
+                    </div>
+                  </div>
+                  
+                  
                   <div class="invalid-feedback">
                     *Selecciona el tipo de usuario;
                   </div>
@@ -478,6 +487,20 @@ Hola, Daniel Orozco / Cerrar Sesión
       $("#navbarTogglerDemo02 > ul > li > a").click(function (e) {
         $('#navbarTogglerDemo02').removeClass("show");
       });
+      
+      
+      
+      $('input:radio[name="tUser"]').on("change",function (e) {
+        
+        if ($(this).is(':checked') && $(this).val() == 'otro') {
+          $('.otro-input').show();
+            
+        }
+        else{
+          $('.otro-input').hide();
+        }
+      });
+      
     </script>		
   </body>
 </html>

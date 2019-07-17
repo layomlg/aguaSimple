@@ -1019,3 +1019,7 @@ span.eliminado{
 .row > .row {
   width: 100%;
 }
+
+.otro-input{
+  display: none;
+}
